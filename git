@@ -1,0 +1,44 @@
+[33mcommit a942ed70f9480cb96dc17f204fb0ed78048a7d01[m
+Author: pourya1382 <115644088+pourya1382@users.noreply.github.com>
+Date:   Thu Oct 13 09:50:33 2022 +0330
+
+    first
+    
+    upload project
+
+[1mdiff --git a/euler project/euler project.iml b/euler project/euler project.iml[m
+[1mnew file mode 100644[m
+[1mindex 0000000..9465dd8[m
+[1m--- /dev/null[m
+[1m+++ b/euler project/euler project.iml[m	
+[36m@@ -0,0 +1,11 @@[m
+[32m+[m[32m<?xml version="1.0" encoding="UTF-8"?>[m[41m[m
+[32m+[m[32m<module type="JAVA_MODULE" version="4">[m[41m[m
+[32m+[m[32m  <component name="NewModuleRootManager" inherit-compiler-output="true">[m[41m[m
+[32m+[m[32m    <exclude-output />[m[41m[m
+[32m+[m[32m    <content url="file://$MODULE_DIR$">[m[41m[m
+[32m+[m[32m      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />[m[41m[m
+[32m+[m[32m    </content>[m[41m[m
+[32m+[m[32m    <orderEntry type="inheritedJdk" />[m[41m[m
+[32m+[m[32m    <orderEntry type="sourceFolder" forTests="false" />[m[41m[m
+[32m+[m[32m  </component>[m[41m[m
+[32m+[m[32m</module>[m
+\ No newline at end of file[m
+[1mdiff --git a/euler project/src/Main.java b/euler project/src/Main.java[m
+[1mnew file mode 100644[m
+[1mindex 0000000..fefbb74[m
+[1m--- /dev/null[m
+[1m+++ b/euler project/src/Main.java[m	
+[36m@@ -0,0 +1,11 @@[m
+[32m+[m[32mimport java.util.Scanner;[m
+[32m+[m
+[32m+[m[32mpublic class Main {[m
+[32m+[m[32m    public static void main(String[] args) {[m
+[32m+[m[32m    Scanner answer = new Scanner(System.in);[m
+[32m+[m[32m    int n = answer.nextInt();[m
+[32m+[m[32m    for(int i = 0; i<=n ;i++){[m
+[32m+[m
+[32m+[m
+[32m+[m[32m    }[m
+[32m+[m[32m}}[m
+\ No newline at end of file[m
