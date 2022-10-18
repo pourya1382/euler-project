@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
@@ -6,43 +7,37 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int primeNumber = scanner.nextInt();
-        int i = 1;
-        int [] listPrimeNumber = new int[primeNumber];
-
-        while(i == primeNumber){
+        ArrayList <Integer> primeNumbers= new ArrayList<Integer>();
+        int prime=3;
 
 
-            int x = 5;
-
-            int [] mainPrime = new int[i];
-            for(int y =0;y<i;y++){
-                if(listPrimeNumber[y]!=0){
-                    int z = 1;
-                    mainPrime[z] = listPrimeNumber[y];
-                    z++;
+        while (primeNumbers.size() == primeNumber){
+            for(int i=0 ; i == primeNumbers.size(); i++) {
+                int result = prime / primeNumbers.get(i);
+                if(result == 0){
+                    primeNumbers.remove(result);
+                    continue;
+                } else{
+                    primeNumbers.add(result);
                 }
 
-            }
-            if(x%2!=0){
-                listPrimeNumber[i] =x ;
-                x+=2;
-            } else if (x% mainPrime[0]!=0) {
-                listPrimeNumber[i] =x ;
-                x+=2;
-            }
-            {
-
-            }
 
 
+                }
+                prime +=2;
+                }
 
 
+        System.out.println(prime);
 
-
-        }
-        System.out.println("your number: " + listPrimeNumber[primeNumber] );
     }
 
+
+
 }
+
+
+
+
 
 
