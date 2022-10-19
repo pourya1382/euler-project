@@ -15,7 +15,7 @@ public class Main {
 //        for (int i = 0; i < halfPrimeNumber + primeNumber; i++) {
 //            int result = primeNumber % halfPrimeNumber;
 //            if (result == 0) {
-//                System.out.println("this isn,t prime number");
+//                System.out.println("this isn't prime number");
 //                break;
 //            } else {
 //                halfPrimeNumber -= 1;
@@ -27,14 +27,16 @@ public class Main {
 //
 //
 //        }
-//
-//
+
+
         while (primeNumbers.size() != primeNumber) {
-            System.out.println("primeNumbers.size(): " + primeNumbers.size());
-            for (int i = 0; i < primeNumbers.size(); i++) {
-                System.out.println("i:" + i);
-                int result = prime % primeNumbers.get(i);
-                System.out.println("result :"+ result);
+//            System.out.println("primeNumbers.size(): " + primeNumbers.size());
+            primeNumbers.add(prime);
+            for (int i = 1; i < primeNumbers.size(); i++) {
+//                System.out.println("i:" + i);
+                int z = i-1;
+                int result = prime % primeNumbers.get(z);
+//                System.out.println("result :" + result);
                 if (result == 0) {
 
                     if (primeNumbers.contains(prime)) {
@@ -47,14 +49,13 @@ public class Main {
                 }
 
 
-
-
             }
-            primeNumbers.add(prime);
-            System.out.println("prime:" + prime);
+
+//            System.out.println("prime:" + prime);
             prime += 2;
-            System.out.println(primeNumbers);
+//            System.out.println(primeNumbers);
         }
+        System.out.println(primeNumbers.get(primeNumbers.size()-1));
     }
 }
 
